@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252, 240, 223);
+    background-image: url('https://www.publicdomainpictures.net/pictures/240000/velka/geometric-background-1514639765jrR.jpg');
+}
+
+.listing {
+    padding-top: 110px;
+    list-style: none;
+    margin: 1em;
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.listing li {
+    box-shadow: 1px 1px 5px #a5a4a2fb;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav-links>p {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav-links>p:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nav-check {
+    display: none;
+}
+
+.white {
+    color: white;
+}
+
+.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-right: 5px;
+    padding-top: 15px;
+}
+
+.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+
+.nav-btn>label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+}
+
+.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+}
+
+.nav-links>p {
+    display: block;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#nav-check:not(:checked)+.nav-links {
+    height: 0px;
+}
+
+#nav-check:checked+.nav-links {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.input-group {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.navbar {
+    height: 110px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+p {
+    margin-top: 25px;
+}
+
+.as {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.if {
+    padding-bottom: 56.25%;
+}
+
+.as .bonk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.btn-sm {
+    height: 3em;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vidSaver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <form>
+            <div class="btn-group" role="group" aria-label="...">
+                <a class="navbar-brand" href="#">vidSaver</a>
+                <input name="go" class="btn btn-outline-success btn-sm" type="submit" value="add vid"></input>
+                <button id="clear" class="btn btn-outline-danger btn-sm">clear all</button>
+                <button id="push" class="btn btn-outline-warning btn-sm">random vid</button>
+            </div>
+            <br>
+            <input name="go" id="item" type="text" class="item form-control" placeholder="Paste YouTube URL Here" aria-label="URL" aria-describedby="basic-addon2"
+                pattern="(?:https?:\/\/)?(?:youtu\.be\/|((?:m\.)|(?:www\.))?youtube\.com\/watch(?:\.php)?\?.*v=)([a-zA-Z0-9\-_]+)([\?|&]t=[a-z0-9]+)?"
+                required>
+        </form>
+
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span class="white">Info</span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <p>
+                <strong class="big">vidSaver</strong> lets you save YouTube videos to your device without the need to have an account. Just paste
+                a YouTube URL at the top, click "add vid" and your video will be added to the page. When you finish watching
+                your videos, you can click "clear all", all of the videos will be removed and you can load it back up again
+                with more videos!</p>
+            <p>
+                If you click "random vid" a random YouTube video will be loaded for you to watch. The random videos will not be saved to
+                your device, so when you refresh, you will still have your saved videos and the random videos will be deleted.
+            </p>
+        </div>
+    </nav>
+
+    <ul class="listing" id="list">
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
