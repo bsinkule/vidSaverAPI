@@ -1,6 +1,6 @@
 # vidSaver - http://vidsaver.surge.sh/
 
-![alt text](./newp2ss.png)
+![alt text](./newP2ss.png)
 
 ## vidSaver lets the user save YouTube videos on their device with local storage, so the user does not need an account or any type of login to save the videos.
 
